@@ -2181,26 +2181,24 @@ ul { list-style: none; }
     
     /* Features Slogan Strip Fixes */
     .features-card.slogan-strip {
-        grid-template-columns: 1fr;
-    }
-    .slogan-item:nth-child(1),
-    .slogan-item:nth-child(2),
-    .slogan-item:nth-child(3) {
-        border-bottom: 1px solid var(--gray-200);
-        padding-bottom: 12px;
-        border-right: none;
-    }
-    .slogan-item .slogan-arrow {
-        display: none;
+        grid-template-columns: 1fr 1fr !important;
+        padding: 16px 12px !important;
+        gap: 0 !important;
     }
     .slogan-item {
-        justify-content: flex-start;
-        padding: 16px 20px;
+        justify-content: flex-start !important;
+        padding: 12px 10px !important;
+        border: none !important;
     }
+    .slogan-item:nth-child(1) { border-right: 1px solid var(--gray-200) !important; border-bottom: 1px solid var(--gray-200) !important; }
+    .slogan-item:nth-child(2) { border-bottom: 1px solid var(--gray-200) !important; }
+    .slogan-item:nth-child(3) { border-right: 1px solid var(--gray-200) !important; }
+    .slogan-item .slogan-arrow { display: none !important; }
     
-    .features-card.slogan-strip {
-        padding: 12px;
-    }
+    .feature-ico { width: 36px !important; height: 36px !important; font-size: 1.1rem !important; border-radius: 10px !important; }
+    .feature-ico svg { width: 18px !important; height: 18px !important; }
+    .slogan-en { font-size: 0.85rem !important; margin-bottom: 2px !important; }
+    .slogan-hi { font-size: 0.7rem !important; }
     .admission-banner {
         padding: 25px 20px;
     }
@@ -2294,55 +2292,4 @@ ul { list-style: none; }
 
 
 
-/* ===== FIXED MINI HORIZONTAL STRIP FOR MOBILE ===== */
-@media (max-width: 768px) {
-    .features-card.slogan-strip {
-        display: flex !important; flex-direction: row !important;
-        justify-content: space-between;
-        padding: 12px 6px;
-        gap: 0;
-    }
-    .slogan-item {
-        flex: 1;
-        display: flex !important; flex-direction: row !important;
-        align-items: center;
-        justify-content: center;
-        padding: 4px;
-        border-right: 1px solid var(--gray-200);
-        border-bottom: none !important;
-        gap: 4px;
-    }
-    .slogan-item:last-child {
-        border-right: none;
-    }
-    .feature-ico {
-        width: 26px;
-        height: 26px;
-        font-size: 0.9rem;
-        border-radius: 8px;
-        border-width: 1px;
-    }
-    .feature-ico svg {
-        width: 14px;
-        height: 14px;
-    }
-    .slogan-info {
-        display: flex;
-        flex-direction: column;
-    }
-    .slogan-en {
-        font-size: 0.65rem;
-        margin-bottom: 0;
-    }
-    .slogan-hi {
-        font-size: 0.55rem;
-        white-space: nowrap;
-    }
-    .slogan-arrow {
-        display: block !important;
-        font-size: 0.75rem;
-        margin-left: 2px;
-        padding-left: 0;
-    }
-}
 
