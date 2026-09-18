@@ -2101,3 +2101,184 @@ ul { list-style: none; }
         margin-top: -30px;
     }
 }
+
+/* ===== ADDITIONAL MOBILE OPTIMIZATIONS ===== */
+@media (max-width: 992px) {
+    /* Principal & Vision */
+    .principal-section {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .principal-card {
+        padding: 24px;
+    }
+    
+    .vision-card {
+        padding: 24px;
+    }
+    
+    /* Footer */
+    .footer-content {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Sections general */
+    .section {
+        padding: 60px 0;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    /* About */
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .about-image {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    
+    /* Footer */
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Principal Layout adjustments for small mobile */
+    .principal-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 16px;
+    }
+    .principal-photo-wrap {
+        margin: 0 auto;
+    }
+    .principal-qualifications {
+        justify-content: center;
+    }
+    .principal-card h4 {
+        font-size: 1.25rem;
+    }
+    .principal-card blockquote {
+        text-align: left;
+        font-size: 0.95rem;
+    }
+    
+    /* Features Slogan Strip Fixes */
+    .features-card.slogan-strip {
+        grid-template-columns: 1fr;
+    }
+    .slogan-item:nth-child(1),
+    .slogan-item:nth-child(2),
+    .slogan-item:nth-child(3) {
+        border-bottom: 1px solid var(--gray-200);
+        padding-bottom: 12px;
+        border-right: none;
+    }
+    .slogan-item .slogan-arrow {
+        display: none;
+    }
+    .slogan-item {
+        justify-content: center;
+    }
+    
+    /* Admission Banner specific */
+    .admission-banner {
+        padding: 25px 20px;
+    }
+    .ad-icon {
+        width: 50px;
+        height: 50px;
+    }
+    .ad-title {
+        font-size: 1.2rem;
+    }
+    .ad-highlight {
+        font-size: 1.4rem;
+    }
+    
+    /* Facilities */
+    .facilities-grid {
+        gap: 15px;
+    }
+    .facility-card {
+        height: 200px;
+    }
+}
+
+/* ===== ADDITIONAL TABLET FOOTER FIX ===== */
+@media (max-width: 1100px) and (min-width: 769px) {
+    .footer-content {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .footer-brand {
+        grid-column: span 3;
+    }
+}
+
+/* ===== CONTACT CARDS MODERNIZATION ===== */
+.contact-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 24px;
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    }
+
+.contact-card:hover {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    border-color: rgba(200, 149, 46, 0.3);
+    transform: translateY(-4px);
+}
+
+.contact-icon {
+    width: 54px;
+    height: 54px;
+    background: var(--green-900);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    box-shadow: 0 8px 16px rgba(16, 42, 24, 0.2);
+}
+
+.contact-card h4 {
+    font-size: 1.1rem;
+    color: var(--green-900);
+    margin-bottom: 6px;
+    font-weight: 800;
+    letter-spacing: -0.2px;
+}
+
+.contact-card p, .contact-card p a {
+    font-size: 0.95rem;
+    color: var(--gray-600);
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+.contact-card p a {
+    color: var(--gray-600);
+    transition: color 0.2s ease;
+}
+
+.contact-card p a:hover {
+    color: var(--green-700);
+}
+
+
+
