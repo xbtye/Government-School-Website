@@ -505,6 +505,12 @@ ul { list-style: none; }
     line-height: 1.2;
 }
 
+/* House Text Colors */
+.en-red { color: #dc2626; }
+.en-blue { color: #2563eb; }
+.en-green { color: #16a34a; }
+.en-yellow { color: #d97706; }
+
 /* House Icon Badges */
 .feature-ico {
     width: 48px;
@@ -2188,10 +2194,13 @@ ul { list-style: none; }
         display: none;
     }
     .slogan-item {
-        justify-content: center;
+        justify-content: flex-start;
+        padding: 16px 20px;
     }
     
-    /* Admission Banner specific */
+    .features-card.slogan-strip {
+        padding: 12px;
+    }
     .admission-banner {
         padding: 25px 20px;
     }
@@ -2209,9 +2218,6 @@ ul { list-style: none; }
     /* Facilities */
     .facilities-grid {
         gap: 15px;
-    }
-    .facility-card {
-        height: 200px;
     }
 }
 
@@ -2281,4 +2287,62 @@ ul { list-style: none; }
 }
 
 
+
+
+
+
+
+
+
+/* ===== FIXED MINI HORIZONTAL STRIP FOR MOBILE ===== */
+@media (max-width: 768px) {
+    .features-card.slogan-strip {
+        display: flex !important; flex-direction: row !important;
+        justify-content: space-between;
+        padding: 12px 6px;
+        gap: 0;
+    }
+    .slogan-item {
+        flex: 1;
+        display: flex !important; flex-direction: row !important;
+        align-items: center;
+        justify-content: center;
+        padding: 4px;
+        border-right: 1px solid var(--gray-200);
+        border-bottom: none !important;
+        gap: 4px;
+    }
+    .slogan-item:last-child {
+        border-right: none;
+    }
+    .feature-ico {
+        width: 26px;
+        height: 26px;
+        font-size: 0.9rem;
+        border-radius: 8px;
+        border-width: 1px;
+    }
+    .feature-ico svg {
+        width: 14px;
+        height: 14px;
+    }
+    .slogan-info {
+        display: flex;
+        flex-direction: column;
+    }
+    .slogan-en {
+        font-size: 0.65rem;
+        margin-bottom: 0;
+    }
+    .slogan-hi {
+        font-size: 0.55rem;
+        white-space: nowrap;
+    }
+    .slogan-arrow {
+        display: block !important;
+        font-size: 0.75rem;
+        margin-left: 2px;
+        padding-left: 0;
+    }
+}
 
