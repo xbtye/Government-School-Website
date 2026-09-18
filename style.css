@@ -2179,26 +2179,59 @@ ul { list-style: none; }
         font-size: 0.95rem;
     }
     
-    /* Features Slogan Strip Fixes */
+    /* Features Slogan Strip: 2x2 Box for Mobile (No Arrow) */
     .features-card.slogan-strip {
+        display: grid !important;
         grid-template-columns: 1fr 1fr !important;
-        padding: 16px 12px !important;
+        padding: 14px 8px !important;
         gap: 0 !important;
     }
     .slogan-item {
+        display: flex !important;
+        align-items: center !important;
         justify-content: flex-start !important;
         padding: 12px 10px !important;
+        gap: 10px !important;
         border: none !important;
     }
-    .slogan-item:nth-child(1) { border-right: 1px solid var(--gray-200) !important; border-bottom: 1px solid var(--gray-200) !important; }
-    .slogan-item:nth-child(2) { border-bottom: 1px solid var(--gray-200) !important; }
-    .slogan-item:nth-child(3) { border-right: 1px solid var(--gray-200) !important; }
-    .slogan-item .slogan-arrow { display: none !important; }
-    
-    .feature-ico { width: 36px !important; height: 36px !important; font-size: 1.1rem !important; border-radius: 10px !important; }
-    .feature-ico svg { width: 18px !important; height: 18px !important; }
-    .slogan-en { font-size: 0.85rem !important; margin-bottom: 2px !important; }
-    .slogan-hi { font-size: 0.7rem !important; }
+    .slogan-item:nth-child(1) {
+        border-right: 1px solid var(--gray-200) !important;
+        border-bottom: 1px solid var(--gray-200) !important;
+    }
+    .slogan-item:nth-child(2) {
+        border-bottom: 1px solid var(--gray-200) !important;
+    }
+    .slogan-item:nth-child(3) {
+        border-right: 1px solid var(--gray-200) !important;
+    }
+    .slogan-item:nth-child(4) {
+        border: none !important;
+    }
+    .slogan-item .slogan-arrow {
+        display: none !important;
+    }
+    .feature-ico {
+        width: 38px !important;
+        height: 38px !important;
+        border-radius: 10px !important;
+        flex-shrink: 0 !important;
+    }
+    .feature-ico svg {
+        width: 20px !important;
+        height: 20px !important;
+    }
+    .slogan-en {
+        font-size: 0.95rem !important;
+        font-weight: 700 !important;
+        margin-bottom: 2px !important;
+        line-height: 1.2 !important;
+    }
+    .slogan-hi {
+        font-size: 0.75rem !important;
+        color: var(--gray-500) !important;
+        margin: 0 !important;
+        line-height: 1.2 !important;
+    }
     .admission-banner {
         padding: 25px 20px;
     }
