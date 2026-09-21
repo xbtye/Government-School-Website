@@ -1,0 +1,38 @@
+{
+  "name": "PM SHRI Upgraded High School Bariyatu",
+  "short_name": "PM SHRI UHS",
+  "description": "PM SHRI Upgraded High School (UHS) Bariyatu, Gola, Ramgarh, Jharkhand",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a2e1a",
+  "theme_color": "#0a2e1a",
+  "icons": [
+    {
+      "src": "/assets/favicon-48x48.png",
+      "sizes": "48x48",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/favicon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/favicon-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/favicon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/pmshri-logo-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
